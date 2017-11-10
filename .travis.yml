@@ -9,6 +9,3 @@ script:
   '.gitignore' --exclude 'upload.sh' --acl public-read --delete . s3://www.caxap.design
 - aws configure set preview.cloudfront true
 - aws cloudfront create-invalidation --distribution-id E1NMNJQG1HTNRB --paths '/*'
-env:
-  global:
-    secure: ouX0w3PiXFAtIW7kRe+N/TaNDFxoC27wISha8QxW64cLPNLJ+uaE8sp8OQOE7Of/cAb34L+uF2g/y2gvFI5NcEZ2/7cthUHVIhw+RInnF365hbfwG3Zfk4kAmtRpdlCy/1xB+S5ZETgo7uwjOmyznRpbAzORkNpZSqrVS6gCnDs+7Ht9EdXrtg/VkLbEO0k7JatNi+oYs5Rd/0rj9lczINWvGJjvz+bllMMdd83SBje994dsYTyQinKfHpWswawyOIwfLGk7XpXMH6b6TVGXL5xOJgQ5SvFBR+ZDON+GRcO8yx8TLiLoiLJkedaef+B7AUMMdSv94nJhg/ZJVtgNVa8rX/nah9vgHGiNO4G2OOJHn1qJ0hqcbBCgFWSclQXKw/e6WfSIKVxG5fuTuYPb7Kj8WYYoio/aPtxvCbxYz+8Rl2z+utafBb1PPXcvBl47Jh0OP1mUSg6WECs++lZJ+8TjzYWn/dZKJfRZdPXk+SOWrC8DTG3yVI3ym55z/+PJiXorKvQ5AkuuLV2uAh8xQBiS9H5OBhzpIF2nLIo57qmFxi1vIriRz9rOwjLT2m4yyVQw6ZpaFMY2BdICcucEqjsBJAaOZve2stK0yXVgBopmOEmCjDRX5YQwpK8ZRlmAhkqQ28Osb5d3C//ybk91qlF4zBt4ZOOA3rTl8uRF9b8=
