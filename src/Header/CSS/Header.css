@@ -1,0 +1,61 @@
+/* Base styles that apply to all menus */
+.menu-section {
+	padding-bottom: 2em;
+	margin-bottom: 2em;
+}
+
+.menu ul {
+  list-style-type: none;
+	padding: 0;
+	margin: 0;
+}
+
+.menu li a {
+	display: block;
+	text-decoration: none;
+	color: black;
+	padding: .6em 1em;
+}
+
+.menu li a:hover {
+	background: hsl(0, 0%, 100%)
+}
+
+/* Styles for Single Level Menu */
+@media screen and (min-width: 30em) {
+
+  .single-nav ul {
+    display: flex;
+  }
+
+  .single-nav li {
+    /*flex: 1 1 auto;*/
+    /*text-align: center;*/
+		/*justify-content: center;*/
+  }
+
+	.menu li a:hover {
+		background: hsl(0, 0%, 100%)
+	}
+
+	.nav-parent {
+		display: flex;
+		justify-content: center;
+	}
+
+	.menu-header {
+		background: hsl(0, 0%, 100%);
+	}
+
+	.site-branding {
+		display: flex;
+		justify-content: center;
+	}
+
+	.site-branding img {
+		max-width: 80%;
+		max-height: 50%;
+
+	}
+
+}
