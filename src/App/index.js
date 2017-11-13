@@ -8,8 +8,8 @@ import Gallery from '../Gallery';
 class App extends Component {
   render() {
     return (
-      <main class="main-area">
-        <div class="centered">
+      <main className="main-area">
+        <div className="centered">
           <Header />
           <Gallery />
         </div>
