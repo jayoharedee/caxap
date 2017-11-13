@@ -1,24 +1,43 @@
 /* Base styles that apply to galleries */
-.galley-section {
-	display: flex;
-	flex-direction: row;
-	border: 1px solid black;
-}
 
-.gallery-photo {
-	display: flex;
-	width: 100%;
-	flex-flow: column;
-}
-
-img {
-  max-width: 100%;
-  height: auto;
-}
 
 /* Styles for gallery break points */
 @media screen and (min-width: 30em) {
 
+	.gallery-photo {
+		display: flex;
+		justify-content: space-around;
+		flex-direction: column;
+	}
 
+	.gallery-photo > * {
+		width: 100%;
+		width: 100%;
+	}
+
+  .gallery-section {
+		position: relative;
+		margin:0 -300px;
+	}
+
+}
+
+@media screen and (min-width: 15em) {
+
+	.gallery-photo {
+		display: flex;
+		justify-content: space-around;
+		flex-direction: column;
+	}
+
+	.gallery-photo > * {
+		width: 100%;
+		width: 100%;
+	}
+
+  .gallery-section {
+		position: relative;
+		margin:0 -300px;
+	}
 
 }
