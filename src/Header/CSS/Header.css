@@ -17,10 +17,6 @@
 	padding: .6em 1em;
 }
 
-.menu li a:hover {
-	background: hsl(0, 0%, 100%)
-}
-
 /* Styles for Single Level Menu */
 @media screen and (min-width: 50em) {
 
