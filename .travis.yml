@@ -10,7 +10,7 @@ before_install:
 install: pip install awscli
 script:
 - node-sass sass/main.scss css/style.css
-- aws s3 sync --exclude '.git/*' --exclude 'README.md' --exclude '.travis.yml' --exclude --exclude 'Dockerfile' --exclude 'package.json' --exclude 'package-lock.json' 
-  '.gitignore' --exclude 'upload.sh' --acl public-read --delete . s3://www.caxap.design
+- aws s3 sync --exclude '.git/*' --exclude 'README.md' --exclude '.travis.yml' --exclude 'Dockerfile' --exclude 'package.json' --exclude 'package-lock.json' 
+  --exclude '.gitignore' --exclude 'upload.sh' --acl public-read --delete . s3://www.caxap.design
 - aws configure set preview.cloudfront true
 - aws cloudfront create-invalidation --distribution-id E1NMNJQG1HTNRB --paths '/*'
