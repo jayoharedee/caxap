@@ -15,9 +15,9 @@ install:
   - sudo pip install awscli
   - rm -rf node_modules
   - npm install
-  - npm rebuild node-sass
 script:
-- node node-sass sass/main.scss css/style.css
+- npm rebuild node-sass
+- node-sass sass/main.scss css/style.css
 - aws s3 sync --exclude '.git/*' --exclude 'README.md' --exclude '.travis.yml' --exclude 'Dockerfile' --exclude 'package.json' --exclude 'package-lock.json' 
   --exclude '.gitignore' --exclude 'upload.sh' --acl public-read --delete . s3://www.caxap.design
 - aws configure set preview.cloudfront true
