@@ -14,7 +14,7 @@ before_install:
 install: 
   - sudo pip install awscli
   - npm install
-before_script: npm cache clean
+  - npm cache clean
 script:
 - node-sass sass/main.scss css/style.css
 - aws s3 sync --exclude '.git/*' --exclude 'README.md' --exclude '.travis.yml' --exclude 'Dockerfile' --exclude 'package.json' --exclude 'package-lock.json' 
