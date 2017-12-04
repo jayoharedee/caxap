@@ -1,24 +1,23 @@
 {
-  "name": "caxap",
-  "version": "0.1.0",
-  "private": true,
-  "dependencies": {
-    "react": "^16.1.0",
-    "react-dom": "^16.1.0",
-    "react-scripts": "1.0.17"
-  },
-  "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject",
-    "lint": "eslint src"
-  },
-  "devDependencies": {
-    "eslint": "^4.12.1",
-    "eslint-config-airbnb": "^16.1.0",
-    "eslint-plugin-import": "^2.8.0",
-    "eslint-plugin-jsx-a11y": "^6.0.2",
-    "eslint-plugin-react": "^7.5.1"
-  }
+    "name": "starter",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "repository": {
+        "type": "git",
+        "url": "git://github.com/jayoharedee/caxap.git"
+    },
+    "scripts": {
+        "compile:sass": "node-sass sass/main.scss css/style.css -w",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "author": "",
+    "license": "ISC",
+    "devDependencies": {
+        "node-sass": "^4.7.2",
+        "webpack": "^3.9.1"
+    },
+    "dependencies": {
+        "live-server": "^1.2.0"
+    }
 }
