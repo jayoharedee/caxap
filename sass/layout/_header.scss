@@ -1,0 +1,31 @@
+.header {
+    height: 100vh;
+    /* helps with responsiveness, read more on this later */
+    background-size: cover;
+    /* ensures top of image always stays on the top - top / bottom / center */
+    background-position: top;
+    /* read about this  - mutates image so it shapes it*/
+    /* bennetfreely.com/clippy */
+    // position: relative;
+
+    &__logo-box {
+        position: absolute;
+        display: flex;
+        align-items: center;
+    }
+}
+
+#video-bg {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100;
+    -ms-transform: translateX(-50%) translateY(-50%);
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+}
