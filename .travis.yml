@@ -13,8 +13,9 @@ before_install:
 - eval export AWS_REGION=\$${TRAVIS_BRANCH}_aws_region
 install: 
   - sudo pip install awscli
+  - rm -rf node_modules
   - npm install
-  - npm cache clean
+  - npm rebuild node-sass
 script:
 - node-sass sass/main.scss css/style.css
 - aws s3 sync --exclude '.git/*' --exclude 'README.md' --exclude '.travis.yml' --exclude 'Dockerfile' --exclude 'package.json' --exclude 'package-lock.json' 
