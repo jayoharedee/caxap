@@ -5,8 +5,6 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         
         <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet">
-
-        <!-- <link rel="stylesheet" href="css/icon-font.css"> -->
         <link rel="stylesheet" href="css/style.css">
         <link rel="shortcut icon" type="image/png" href="img/favicon.png">
         
@@ -16,11 +14,10 @@
 
         <header class="header">
             <div class="header__logo-box">
-                <!-- <img src="img/logo-white.png" alt="logo" class="header__logo"> -->
-                <video autoplay="true" loop="true" id="video-bg">
+                <!-- <video autoplay="true" loop="true" preload="none" id="video-bg" controls="true"> -->
+                <video preload="auto" autoplay="true" loop="loop" muted="muted" volume="0" id="video-bg">
                     <source src="video/glitch.mp4" type="video/mp4">
                     <source src="video/glitch.webm" type="video/webm"> Your browser does not support the video tag.
-                    <source src="video/glitch.mov"> Your browser does not support the video tag.
                 </video>
             </div>
         </header>
